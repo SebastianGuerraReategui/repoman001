@@ -1,0 +1,35 @@
+.rowImagen{
+    width: 100%;
+    margin:auto;
+    padding:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+        .rowImagen__menu{
+            display:flex;
+            justify-content: center;
+            .boing{
+                height:40%;
+                width:40%;
+                    .boing__Img{
+                        align-items: center;
+                            img{
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                max-width: 75%;  
+                                height: auto;
+                            }
+                    }
+                    .boing__Text{
+                        text-align: center;
+                        font-family:'Roboto', sans-serif;
+                            a{
+                                text-decoration:none;
+                                color:darkcyan;
+                            }
+                    }
+            }
+        }
+
+  }
+

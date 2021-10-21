@@ -1,0 +1,44 @@
+$corn:cornsilk;
+$cadet:cadetblue;
+
+.icyNav{
+    background-color:$cadet;
+  }
+  
+  .navText{
+    color:$corn;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+  }
+
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color:$corn;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color:$corn;
+  }
+
+  .navbar-light .navbar-text {
+    color:$corn;
+  }
+
+.ayo  {
+  width: 100%;
+  border: solid;
+  border-color: black;
+}
+
+.aya  {
+  width: 100%;
+  border:solid;
+  border-color: crimson;
+}

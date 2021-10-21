@@ -1,0 +1,67 @@
+$corn:cornsilk;
+$red:indianred;
+$cyan:darkcyan;
+
+.rowLocales{
+    width: 100%;
+    margin:auto;
+    padding:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .rowLocales__espacio{
+        display:flex;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        color:$corn;
+        text-decoration:none;
+        width:25%;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding:none;
+          .tabla{
+            width:100%;
+              .tabla__header{
+                background-color:$red;
+                width:100%;
+                text-decoration:$corn;
+              }
+              .tabla__imagen{
+                width:100%;
+                height:20rem;
+                .tabla__imagen-primero{
+                  background-image: url(../images/heladeríaPortada1.jpg);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+                .tabla__imagen-segundo{
+                  background-image: url(../images/heladeríaPortada2.jpg);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+                .tabla__imagen-tercero{
+                    background-image: url(../images/heladeríaPortada3.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+              }
+              .tabla__día{
+                width: 100%;
+                background-color: none;
+                color:$cyan;
+                padding-bottom: 1rem;
+              }
+              .tabla__saborDía{
+                font-size:1.5rem;
+                color:$red;
+                  ul{
+                    list-style:none;
+                  }
+              }
+          }
+    }
+}

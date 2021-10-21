@@ -1,0 +1,33 @@
+.pedidoTag{
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color:cadetblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.checkers{
+    color: indianred;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.forma{
+    margin-top:1rem;
+    width: 50%;
+        .btn{
+            background-color:darksalmon;
+            color:cornsilk;
+        }
+}
+
+/*BOOTSTRAP EDITS*/
+.form-check-input:checked {
+    background-color:black;
+    border-color:black;
+}
+
+.input-group-text {
+    background-color: darksalmon;
+    color:cornsilk;
+}

@@ -1,0 +1,62 @@
+.rowNosotros{
+    width: 100%;
+    margin:auto;
+    padding:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .nosotrosContent{
+        display:flex;
+        justify-content: center;
+        .acc{
+            width: 100%;
+            .accText{
+                background-color: cornsilk;
+              }
+
+            .acc1{
+                background-color:indianred;
+                color: cornsilk;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+              }
+              
+              .acc2{
+                background-color:cadetblue;
+                color:cornsilk;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+              }
+          }
+
+      
+      }
+  }
+
+  .johnny{
+    width: 20rem;
+    height:20rem;
+  
+  
+  }
+  .johnny img{
+    width: 20rem;
+    height:20rem;
+  
+  }
+
+  /*BOOTSTRAP EDITS*/
+  .accordion-button:focus {
+    z-index: none;
+    border-color:none;
+    outline: none;
+    box-shadow:none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color:black;
+    background-image:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7)), url(../images/heladitos.jpg);
+    background-size:10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    box-shadow:none;
+  }

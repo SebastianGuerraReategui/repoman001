@@ -1,0 +1,117 @@
+.rowOtros{
+    width: 100%;
+    margin:auto;
+    padding:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sectionCaja1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+        .sectionCaja1__box{
+            font-family:'Roboto', sans-serif;
+            font-size: 3rem;
+            width: 100%;
+            color:skyblue;
+        }
+        .sectionCaja1__p{
+            font-family:'Roboto', sans-serif;
+            font-size: 1rem;
+            width: 100%;
+            color:indianred;
+        }
+  }
+
+.snacksMascotas{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+        .snacksMascotas__Caja{
+            width: 50%;
+                .snacksMascotas__Caja-Productos{
+                    background-color: #222222;
+                    height: 10rem;
+                    border-radius: 45%;
+                    color:cornsilk;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    .textos{
+                            font-family:'Roboto', sans-serif;
+                            color: indianred;
+                            font-size: 1rem;
+                        }
+                        
+                }
+        }
+}
+
+.textos{
+    font-family:'Roboto', sans-serif;
+    text-align: left;
+}
+.snacksTest{
+    display: flex;
+    justify-content: space-between;
+        .snacksTest__Caja{
+            width:100%;
+            .snacksInfo{
+                height: 20rem;
+                border-radius: none;
+                color:darkslategrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-top:2rem;
+                margin-bottom: 1rem;
+                text-align:center;
+                .snacksInfo__Image{
+                    flex: 1 1 150px;
+                    flex: 0 1 150px;
+                    margin: 5px;
+                        img{
+                            height:150px;
+                            width:150px;
+                        }
+                  }
+                 
+            }
+        }
+  
+  }
+
+
+
+#basedBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#patitas{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(../images/paw.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#insumos{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(../images/veggies.jfif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#salud{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(../images/healthy.jfif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

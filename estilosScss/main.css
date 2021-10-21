@@ -1,0 +1,664 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+.titulo {
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.titulo .titulo__Texto a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: indianred;
+  text-decoration: none;
+}
+
+.subtitulo {
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.subtitulo .subtitulo__Texto {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: skyblue;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.rowMenu {
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.colMenu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: indianred;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.colMenu .colMenu__Texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: indianred;
+  text-decoration: none;
+}
+.colMenu a:hover {
+  transform: scale(1.1);
+  color: brown;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+.footer .footer__telfs {
+  list-style: none;
+}
+.footer .footer__telfs li {
+  text-align: left;
+  color: indianred;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.footer .footer__redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.volver1 {
+  margin-top: 2rem;
+  background-color: cadetblue;
+}
+.volver1 a {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.volver1:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/heladitos.jpg);
+  background-size: 25%;
+  color: cornsilk;
+}
+
+.redes {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 45%;
+  border: none;
+  background-color: #54456b;
+  font-size: 1rem;
+  color: cornsilk;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  border: solid;
+  border-color: black;
+}
+
+.midRedes {
+  text-align: center;
+}
+
+.rowLocales {
+  width: 100%;
+  margin: auto;
+  padding: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.rowLocales .rowLocales__espacio {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: cornsilk;
+  text-decoration: none;
+  width: 25%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: none;
+}
+.rowLocales .rowLocales__espacio .tabla {
+  width: 100%;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__header {
+  background-color: indianred;
+  width: 100%;
+  -webkit-text-decoration: cornsilk;
+          text-decoration: cornsilk;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__imagen {
+  width: 100%;
+  height: 20rem;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-primero {
+  background-image: url(../images/heladeríaPortada1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-segundo {
+  background-image: url(../images/heladeríaPortada2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-tercero {
+  background-image: url(../images/heladeríaPortada3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__día {
+  width: 100%;
+  background-color: none;
+  color: darkcyan;
+  padding-bottom: 1rem;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__saborDía {
+  font-size: 1.5rem;
+  color: indianred;
+}
+.rowLocales .rowLocales__espacio .tabla .tabla__saborDía ul {
+  list-style: none;
+}
+
+.rowImagen {
+  width: 100%;
+  margin: auto;
+  padding: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.rowImagen .rowImagen__menu {
+  display: flex;
+  justify-content: center;
+}
+.rowImagen .rowImagen__menu .boing {
+  height: 40%;
+  width: 40%;
+}
+.rowImagen .rowImagen__menu .boing .boing__Img {
+  align-items: center;
+}
+.rowImagen .rowImagen__menu .boing .boing__Img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+  height: auto;
+}
+.rowImagen .rowImagen__menu .boing .boing__Text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.rowImagen .rowImagen__menu .boing .boing__Text a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+.rowOtros {
+  width: 100%;
+  margin: auto;
+  padding: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sectionCaja1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.sectionCaja1 .sectionCaja1__box {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  color: skyblue;
+}
+.sectionCaja1 .sectionCaja1__p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  color: indianred;
+}
+
+.snacksMascotas {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.snacksMascotas .snacksMascotas__Caja {
+  width: 50%;
+}
+.snacksMascotas .snacksMascotas__Caja .snacksMascotas__Caja-Productos {
+  background-color: #222222;
+  height: 10rem;
+  border-radius: 45%;
+  color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.snacksMascotas .snacksMascotas__Caja .snacksMascotas__Caja-Productos .textos {
+  font-family: "Roboto", sans-serif;
+  color: indianred;
+  font-size: 1rem;
+}
+
+.textos {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+.snacksTest {
+  display: flex;
+  justify-content: space-between;
+}
+.snacksTest .snacksTest__Caja {
+  width: 100%;
+}
+.snacksTest .snacksTest__Caja .snacksInfo {
+  height: 20rem;
+  border-radius: none;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.snacksTest .snacksTest__Caja .snacksInfo .snacksInfo__Image {
+  flex: 1 1 150px;
+  flex: 0 1 150px;
+  margin: 5px;
+}
+.snacksTest .snacksTest__Caja .snacksInfo .snacksInfo__Image img {
+  height: 150px;
+  width: 150px;
+}
+
+#basedBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#patitas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../images/paw.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#insumos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../images/veggies.jfif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#salud {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../images/healthy.jfif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icyNav {
+  background-color: cadetblue;
+}
+
+.navText {
+  color: cornsilk;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+  color: cornsilk;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: cornsilk;
+}
+
+.navbar-light .navbar-text {
+  color: cornsilk;
+}
+
+.ayo {
+  width: 100%;
+  border: solid;
+  border-color: black;
+}
+
+.aya {
+  width: 100%;
+  border: solid;
+  border-color: crimson;
+}
+
+.rowSnacks {
+  width: 100%;
+  margin: auto;
+  padding: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.rowSnacks .rowSnacks__espacio {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: burlywood;
+  text-decoration: none;
+  width: 20%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: none;
+  border-radius: 20%;
+}
+.rowSnacks .rowSnacks__espacio .tabla {
+  width: 100%;
+  border-radius: 20%;
+}
+.rowSnacks .rowSnacks__espacio .tabla .tabla__snacks {
+  width: 100%;
+  height: 18rem;
+  border-radius: 20%;
+}
+.rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-primero {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/national-cookie-day.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-segundo {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/receitas-brownie-scaled.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-tercero {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/muffin.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-cuarto {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/alfajor.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tabla__snackies {
+  font-size: 1.5rem;
+  color: indianred;
+}
+.tabla__snackies ul {
+  list-style: none;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+.tabla__snackies ul li {
+  color: indianred;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.pedidoTag {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: cadetblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.checkers {
+  color: indianred;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.forma {
+  margin-top: 1rem;
+  width: 50%;
+}
+.forma .btn {
+  background-color: darksalmon;
+  color: cornsilk;
+}
+
+/*BOOTSTRAP EDITS*/
+.form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.input-group-text {
+  background-color: darksalmon;
+  color: cornsilk;
+}
+
+.rowNosotros {
+  width: 100%;
+  margin: auto;
+  padding: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.rowNosotros .nosotrosContent {
+  display: flex;
+  justify-content: center;
+}
+.rowNosotros .nosotrosContent .acc {
+  width: 100%;
+}
+.rowNosotros .nosotrosContent .acc .accText {
+  background-color: cornsilk;
+}
+.rowNosotros .nosotrosContent .acc .acc1 {
+  background-color: indianred;
+  color: cornsilk;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.rowNosotros .nosotrosContent .acc .acc2 {
+  background-color: cadetblue;
+  color: cornsilk;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.johnny {
+  width: 20rem;
+  height: 20rem;
+}
+
+.johnny img {
+  width: 20rem;
+  height: 20rem;
+}
+
+/*BOOTSTRAP EDITS*/
+.accordion-button:focus {
+  z-index: none;
+  border-color: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/heladitos.jpg);
+  background-size: 10%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  box-shadow: none;
+}
+
+.rowHelados {
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem;
+  margin-top: 3rem;
+}
+.rowHelados .heladosSabores2 {
+  display: flex;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px;
+  border: solid;
+  border-radius: 45%;
+  margin: 0.5em 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
+  height: 8rem;
+  width: 8rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: cornsilk;
+  font-size: large;
+}
+
+.heladosSabores2:hover {
+  transform: scale(1.1);
+}
+
+#sabor1 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/vainilla.jfif);
+}
+
+#sabor2 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/pistachio.jpg);
+}
+
+#sabor3 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/luccia.jpg);
+}
+
+#sabor4 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/cheesecake.jpg);
+}
+
+#sabor5 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/chocolate.jpg);
+}
+
+#sabor6 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/frutos-del-bosque.jpg);
+}
+
+#sabor7 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/oreo.jpg);
+}
+
+#sabor8 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/queso-helado.jpg);
+}
+
+#sabor9 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/cielo-azul.jpg);
+}
+
+#sabor10 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/cookie-monster.jpg);
+}
+
+#sabor11 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/lucuma.jpg);
+}
+
+#sabor12 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/fresa.jpg);
+}
+
+#sabor13 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/mango.jpg);
+}
+
+#sabor14 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/red-velvet.jpg);
+}
+
+#sabor15 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/morochas.jpg);
+}
+
+#sabor16 {
+  background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(100, 100, 100, 0.7)), url(../images/castaña.jpg);
+}
+
+.contains404 {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.rowError .notHelado {
+  display: flex;
+  height: 30%;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  color: darkcyan;
+}
+.rowError .notHelado img {
+  align-self: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}/*# sourceMappingURL=main.css.map */

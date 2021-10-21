@@ -1,0 +1,122 @@
+body{
+    background-color:cornsilk;
+}
+
+.titulo{
+    width: 100%;
+    margin:auto;
+    padding:0.5rem;
+        .titulo__Texto a{
+            display:flex;
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            color:indianred;
+            text-decoration:none;
+          }
+  }
+  
+  .subtitulo{
+    width: 100%;
+    margin:auto;
+    padding:0.5rem;
+        .subtitulo__Texto{
+            display:flex;
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color:skyblue;
+            text-decoration:none;
+            margin-bottom: 2rem;
+          }
+  }
+
+.rowMenu{
+    width: 100%;
+    margin:auto;
+    padding:0.5rem;
+  }
+
+.colMenu{
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color:indianred;
+    text-decoration:none;
+    margin-bottom: 2rem;
+        .colMenu__Texto{  
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color:indianred;
+            text-decoration:none;
+          }
+          a:hover{
+              transform: scale(1.1);
+              color: brown;
+          }
+  }
+
+  .footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    padding:1rem;
+        .footer__telfs{
+            list-style: none;
+                li{
+                    text-align:left;
+                    color:indianred;
+                    font-family:'Roboto', sans-serif;
+                    font-size:1rem;
+                }
+        }
+        .footer__redes{
+            display:flex;
+            flex-direction:column;
+        }
+  }
+
+.volver1{
+    margin-top:2rem;
+    background-color:cadetblue;
+    a{
+        text-decoration: none;
+        color: cornsilk;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+}
+
+.volver1:hover{
+    transform: scale(1.1);
+    background-image:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7)), url(../images/heladitos.jpg);
+    background-size:25%;
+    color:cornsilk;
+}
+
+.redes{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 45%;
+    border:none;
+    background-color:#54456b;
+    font-size:1rem;
+    color:cornsilk;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    border:solid;
+    border-color: black;
+}
+
+.midRedes{
+    text-align: center;
+}

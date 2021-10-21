@@ -1,0 +1,74 @@
+$gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(14, 13, 13, 0.7));
+
+.rowSnacks{
+    width: 100%;
+    margin:auto;
+    padding:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .rowSnacks__espacio{
+        display:flex;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        color:burlywood;
+        text-decoration:none;
+        width:20%;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding:none;
+        border-radius:20%;
+          .tabla{
+            width:100%;
+            border-radius:20%;
+              .tabla__snacks{
+                width:100%;
+                height:18rem;
+                border-radius:20%;
+                .tabla__snacks-primero{
+                    background-image:$gradiente, url(../images/national-cookie-day.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .tabla__snacks-segundo{
+                    background-image:$gradiente, url(../images/receitas-brownie-scaled.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .tabla__snacks-tercero{
+                    background-image:$gradiente, url(../images/muffin.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+                .tabla__snacks-cuarto{
+                    background-image:$gradiente, url(../images/alfajor.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+              }
+              
+          }
+    }
+}
+
+.tabla__snackies{
+    font-size:1.5rem;
+    color:indianred;
+      ul{
+        list-style:none;
+        text-align:left;
+        justify-content: left;
+        align-items: left;
+            li{
+                color:indianred;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+                padding:0.5rem;
+            }
+      }
+  }

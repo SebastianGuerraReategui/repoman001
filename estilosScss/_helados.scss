@@ -1,0 +1,95 @@
+$gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
+
+.rowHelados{
+    width: 50%;
+    margin:auto;
+    padding:0.5rem;
+    margin-top: 3rem;
+
+    .heladosSabores2{
+        display:flex;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px;
+        border:solid;
+        border-radius: 45%;
+        margin: 0.5em 0.5rem 0.5rem 0.5rem;
+        padding:0.5rem;
+        height: 8rem;
+        width: 8rem;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        color:cornsilk;
+        font-size: large;
+      }
+  }
+
+  .heladosSabores2:hover{
+    transform: scale(1.1);
+  }
+  
+  #sabor1{
+    background-image:$gradiente , url(../images/vainilla.jfif);
+  }
+  
+  #sabor2{
+    background-image:$gradiente, url(../images/pistachio.jpg);
+  }
+  
+  #sabor3{
+    background-image:$gradiente, url(../images/luccia.jpg);
+  }
+  
+  #sabor4{
+    background-image:$gradiente, url(../images/cheesecake.jpg);
+  }
+  
+  #sabor5{
+    background-image:$gradiente, url(../images/chocolate.jpg);
+  }
+  
+  #sabor6{
+    background-image:$gradiente, url(../images/frutos-del-bosque.jpg);
+  }
+  
+  #sabor7{
+    background-image:$gradiente, url(../images/oreo.jpg);
+  }
+  
+  #sabor8{
+    background-image:$gradiente, url(../images/queso-helado.jpg);
+  }
+  
+  #sabor9{
+    background-image:$gradiente, url(../images/cielo-azul.jpg);
+  }
+  
+  #sabor10{
+    background-image:$gradiente, url(../images/cookie-monster.jpg);
+  }
+  
+  #sabor11{
+    background-image:$gradiente, url(../images/lucuma.jpg);
+  }
+  
+  #sabor12{
+    background-image:$gradiente, url(../images/fresa.jpg);
+  }
+  
+  #sabor13{
+    background-image:$gradiente, url(../images/mango.jpg);
+  }
+  
+  #sabor14{
+    background-image:$gradiente, url(../images/red-velvet.jpg);
+  }
+  
+  #sabor15{
+    background-image:$gradiente, url(../images/morochas.jpg);
+  }
+  
+  #sabor16{
+    background-image:$gradiente, url(../images/castaña.jpg);
+  }
