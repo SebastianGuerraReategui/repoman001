@@ -35,6 +35,9 @@ body{
           }
   }
 
+.container{
+    padding: 1rem;
+}
 .rowMenu{
     width: 100%;
     margin:auto;
@@ -85,14 +88,22 @@ body{
   }
 
 .volver1{
+    
+    width:10rem;
+    height:3rem;
+    align-content: center;
+    align-items: center;
     margin-top:2rem;
     background-color:cadetblue;
     margin-bottom:2rem;
+    border-radius:30%;
+    text-align: center;
     a{
         text-decoration: none;
         color: cornsilk;
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
+        text-align: center;
     }
     
 }

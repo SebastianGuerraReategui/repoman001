@@ -1,9 +1,9 @@
 $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
 
 .rowHelados{
-    width: 50%;
+    width: 100%;
     margin:auto;
-    padding:0.5rem;
+    padding:1rem;
     margin-top: 3rem;
 
     .heladosSabores2{
@@ -11,13 +11,13 @@ $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px;
+        border: 1rem;
         border:solid;
         border-radius: 45%;
-        margin: 0.5em 0.5rem 0.5rem 0.5rem;
-        padding:0.5rem;
-        height: 8rem;
-        width: 8rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding:1rem;
+        width:8rem;
+        height:8rem;
         text-align:center;
         justify-content: center;
         align-items: center;
@@ -26,6 +26,10 @@ $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
       }
   }
 
+  .tablaHelado{
+    border:solid;
+    border-color: red;
+  }
   .heladosSabores2:hover{
     transform: scale(1.1);
   }
@@ -93,3 +97,4 @@ $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
   #sabor16{
     background-image:$gradiente, url(../images/castaña.jpg);
   }
+

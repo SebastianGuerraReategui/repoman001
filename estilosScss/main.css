@@ -42,6 +42,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.container {
+  padding: 1rem;
+}
+
 .rowMenu {
   width: 100%;
   margin: auto;
@@ -92,15 +96,22 @@ body {
 }
 
 .volver1 {
+  width: 10rem;
+  height: 3rem;
+  align-content: center;
+  align-items: center;
   margin-top: 2rem;
   background-color: cadetblue;
   margin-bottom: 2rem;
+  border-radius: 30%;
+  text-align: center;
 }
 .volver1 a {
   text-decoration: none;
   color: cornsilk;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .volver1:hover {
@@ -129,9 +140,6 @@ body {
 }
 
 .rowLocales {
-  width: 100%;
-  margin: auto;
-  padding: none;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -144,8 +152,7 @@ body {
   font-size: 2rem;
   color: cornsilk;
   text-decoration: none;
-  width: 25%;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 1rem;
   padding: none;
 }
 .rowLocales .rowLocales__espacio .tabla {
@@ -183,11 +190,14 @@ body {
   width: 100%;
   background-color: none;
   color: darkcyan;
+  font-size: 1.5;
   padding-bottom: 1rem;
+  text-align: center;
 }
 .rowLocales .rowLocales__espacio .tabla .tabla__saborDía {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: indianred;
+  text-align: center;
 }
 .rowLocales .rowLocales__espacio .tabla .tabla__saborDía ul {
   list-style: none;
@@ -400,47 +410,47 @@ body {
   font-size: 2rem;
   color: burlywood;
   text-decoration: none;
-  width: 20%;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: none;
-  border-radius: 20%;
 }
 .rowSnacks .rowSnacks__espacio .tabla {
-  width: 100%;
-  border-radius: 20%;
+  width: 55%;
 }
 .rowSnacks .rowSnacks__espacio .tabla .tabla__snacks {
   width: 100%;
   height: 18rem;
-  border-radius: 20%;
 }
 .rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-primero {
   background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/national-cookie-day.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15%;
 }
 .rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-segundo {
   background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/receitas-brownie-scaled.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15%;
 }
 .rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-tercero {
   background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/muffin.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15%;
 }
 .rowSnacks .rowSnacks__espacio .tabla .tabla__snacks .tabla__snacks-cuarto {
   background-image: linear-gradient(rgba(58, 58, 58, 0), rgba(14, 13, 13, 0.7)), url(../images/alfajor.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15%;
 }
 
 .tabla__snackies {
   font-size: 1.5rem;
+  height: 20rem;
   color: indianred;
 }
 .tabla__snackies ul {
@@ -549,9 +559,9 @@ body {
 }
 
 .rowHelados {
-  width: 50%;
+  width: 100%;
   margin: auto;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: 3rem;
 }
 .rowHelados .heladosSabores2 {
@@ -559,18 +569,23 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px;
+  border: 1rem;
   border: solid;
   border-radius: 45%;
-  margin: 0.5em 0.5rem 0.5rem 0.5rem;
-  padding: 0.5rem;
-  height: 8rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 1rem;
   width: 8rem;
+  height: 8rem;
   text-align: center;
   justify-content: center;
   align-items: center;
   color: cornsilk;
   font-size: large;
+}
+
+.tablaHelado {
+  border: solid;
+  border-color: red;
 }
 
 .heladosSabores2:hover {
@@ -662,4 +677,143 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+/*Index Query*/
+@media only screen and (max-width: 768px) {
+  .boing {
+    margin-top: 1rem;
+  }
+}
+/*Nosotros Query*/
+@media only screen and (max-width: 960px) {
+  .johnny {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .johnny {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .johnny img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+/*Locales Query*/
+@media only screen and (min-width: 1200px) {
+  .rowLocales {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .rowLocales .rowLocales__espacio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: cornsilk;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: none;
+  }
+  .rowLocales .rowLocales__espacio .tabla {
+    width: 80%;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__header {
+    background-color: indianred;
+    width: 80%;
+    -webkit-text-decoration: cornsilk;
+            text-decoration: cornsilk;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__imagen {
+    width: 80%;
+    height: 20rem;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-primero {
+    background-image: url(../images/heladeríaPortada1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-segundo {
+    background-image: url(../images/heladeríaPortada2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-tercero {
+    background-image: url(../images/heladeríaPortada3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__día {
+    width: 80%;
+    background-color: none;
+    color: darkcyan;
+    font-size: 1.5;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__saborDía {
+    font-size: 1.25rem;
+    color: indianred;
+    text-align: center;
+  }
+  .rowLocales .rowLocales__espacio .tabla .tabla__saborDía ul {
+    list-style: none;
+  }
+}
+/*Helados Query*/
+@media only screen and (min-width: 1200px) {
+  .rowHelados {
+    width: 100%;
+    padding: 4rem;
+    margin-top: 3rem;
+  }
+  .rowHelados .heladosSabores2 {
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1rem;
+    border: solid;
+    border-radius: 45%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+    font-size: large;
+  }
+}
+/*Snack Querie*/
+@media only screen and (max-width: 1199px) {
+  .rowSnacks .rowSnacks__espacio .tabla {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .rowSnacks .rowSnacks__espacio .tabla {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .rowSnacks .rowSnacks__espacio .tabla {
+    width: 14rem;
+  }
+  .rowSnacks .rowSnacks__espacio .tabla .tabla_snacks {
+    width: 100%;
+    height: 14rem;
+  }
 }/*# sourceMappingURL=main.css.map */

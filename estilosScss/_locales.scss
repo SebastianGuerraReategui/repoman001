@@ -3,9 +3,6 @@ $red:indianred;
 $cyan:darkcyan;
 
 .rowLocales{
-    width: 100%;
-    margin:auto;
-    padding:none;
     margin-top: 3rem;
     margin-bottom: 3rem;
     .rowLocales__espacio{
@@ -17,8 +14,7 @@ $cyan:darkcyan;
         font-size: 2rem;
         color:$corn;
         text-decoration:none;
-        width:25%;
-        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        margin-bottom:  1rem;
         padding:none;
           .tabla{
             width:100%;
@@ -53,11 +49,14 @@ $cyan:darkcyan;
                 width: 100%;
                 background-color: none;
                 color:$cyan;
+                font-size: 1.5;
                 padding-bottom: 1rem;
+                text-align: center;
               }
               .tabla__saborDía{
-                font-size:1.5rem;
+                font-size:1.25rem;
                 color:$red;
+                text-align: center;
                   ul{
                     list-style:none;
                   }

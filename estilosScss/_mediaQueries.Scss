@@ -1,0 +1,174 @@
+/*Index Query*/
+@media only screen and (max-width: 768px) {
+    .boing {
+      margin-top:1rem;
+    }
+  }
+
+
+
+
+/*Nosotros Query*/
+
+@media only screen and (max-width: 960px){
+    .johnny{
+        margin-top:1rem;
+        margin-bottom:1rem;
+
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .johnny{
+        margin-top:1rem;
+        margin-bottom:1rem;
+        width: 15rem;
+        height:15rem;
+
+    }
+    .johnny img{
+        height: 15rem;
+        width:15rem;
+    }
+}
+
+/*Locales Query*/
+@media only screen and (min-width: 1200px){
+.rowLocales{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .rowLocales__espacio{
+        display:flex;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        color:$corn;
+        text-decoration:none;
+        margin-bottom:  1rem;
+        padding:none;
+          .tabla{
+            width:80%;
+              .tabla__header{
+                background-color:$red;
+                width:80%;
+                text-decoration:$corn;
+              }
+              .tabla__imagen{
+                width:80%;
+                height:20rem;
+                .tabla__imagen-primero{
+                  background-image: url(../images/heladeríaPortada1.jpg);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+                .tabla__imagen-segundo{
+                  background-image: url(../images/heladeríaPortada2.jpg);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+                .tabla__imagen-tercero{
+                    background-image: url(../images/heladeríaPortada3.jpg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+              }
+              .tabla__día{
+                width: 80%;
+                background-color: none;
+                color:$cyan;
+                font-size: 1.5;
+                padding-bottom: 1rem;
+                text-align: center;
+              }
+              .tabla__saborDía{
+                font-size:1.25rem;
+                color:$red;
+                text-align: center;
+                  ul{
+                    list-style:none;
+                  }
+              }
+          }
+    }
+}
+}
+
+/*Helados Query*/
+@media only screen and (min-width: 1200px){
+    .rowHelados{
+        width: 100%;
+        padding:4rem;
+        margin-top: 3rem;
+    
+        .heladosSabores2{
+            display:flex;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1rem;
+            border:solid;
+            border-radius: 45%;
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+            padding:1rem;
+            width:8rem;
+            height:8rem;
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            color:cornsilk;
+            font-size: large;
+          }
+      }
+}
+
+/*Snack Querie*/
+
+@media only screen and (max-width: 1199px){
+    .rowSnacks{
+
+        .rowSnacks__espacio{
+            
+              .tabla{
+                width:60%;
+                  
+              }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 980px){
+    .rowSnacks{
+
+        .rowSnacks__espacio{
+            
+              .tabla{
+                width:18rem;
+                  
+              }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 720px){
+    .rowSnacks{
+
+        .rowSnacks__espacio{
+            
+              .tabla{
+                width:14rem;
+                  .tabla_snacks{
+                      width: 100%;
+                      height:14rem;
+                  }
+              }
+        }
+    }
+    
+}
