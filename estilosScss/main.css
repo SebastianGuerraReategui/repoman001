@@ -241,14 +241,12 @@ body {
   width: 100%;
   margin: auto;
   padding: none;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .sectionCaja1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 .sectionCaja1 .sectionCaja1__box {
@@ -266,7 +264,6 @@ body {
 
 .snacksMascotas {
   display: flex;
-  margin-top: 2rem;
   justify-content: space-around;
 }
 .snacksMascotas .snacksMascotas__Caja {
@@ -303,7 +300,6 @@ body {
   width: 100%;
 }
 .snacksTest .snacksTest__Caja .snacksInfo {
-  height: 20rem;
   border-radius: none;
   color: darkslategrey;
   display: flex;

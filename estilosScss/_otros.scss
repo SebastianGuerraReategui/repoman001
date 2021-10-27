@@ -2,14 +2,12 @@
     width: 100%;
     margin:auto;
     padding:none;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .sectionCaja1{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top:2rem;
         .sectionCaja1__box{
             font-family:'Roboto', sans-serif;
@@ -27,7 +25,6 @@
 
 .snacksMascotas{
     display: flex;
-    margin-top: 2rem;
     justify-content: space-around;
         .snacksMascotas__Caja{
             width: 50%;
@@ -62,7 +59,7 @@
         .snacksTest__Caja{
             width:100%;
             .snacksInfo{
-                height: 20rem;
+                
                 border-radius: none;
                 color:darkslategrey;
                 display: flex;
