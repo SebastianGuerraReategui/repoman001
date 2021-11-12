@@ -31,3 +31,16 @@
     background-color: darksalmon;
     color:cornsilk;
 }
+
+.masMenos{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.form-control-sm {
+    min-height: calc(1.5rem + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.2rem;
+    min-width: 4rem;
+}

@@ -150,9 +150,9 @@ body {
 }
 .rowLocales .rowLocales__espacio {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: cornsilk;
@@ -171,7 +171,7 @@ body {
 }
 .rowLocales .rowLocales__espacio .tabla .tabla__imagen {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
 }
 .rowLocales .rowLocales__espacio .tabla .tabla__imagen .tabla__imagen-primero {
   background-image: url(../images/heladeríaPortada1.jpg);
@@ -197,14 +197,44 @@ body {
   color: darkcyan;
   font-size: 1.5;
   padding-bottom: 1rem;
-  text-align: center;
+  text-align: left;
 }
-.rowLocales .rowLocales__espacio .tabla .tabla__saborDía {
+
+.localesStart {
+  font-size: 2.5rem;
+  color: lightseagreen;
+}
+
+.tablaDía {
+  color: indianred;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.saborDelDía {
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+}
+
+.localDía {
+  font-size: 0.8rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.introSabores {
+  color: darkcyan;
+}
+
+.tabla__saborDía {
   font-size: 1.25rem;
   color: indianred;
-  text-align: center;
+  text-align: left;
 }
-.rowLocales .rowLocales__espacio .tabla .tabla__saborDía ul {
+.tabla__saborDía ul {
   list-style: none;
 }
 
@@ -500,6 +530,19 @@ body {
 .input-group-text {
   background-color: darksalmon;
   color: cornsilk;
+}
+
+.masMenos {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.form-control-sm {
+  min-height: calc(1.5rem + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  min-width: 4rem;
 }
 
 .rowNosotros {
