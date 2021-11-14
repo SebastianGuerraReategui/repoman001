@@ -6,7 +6,7 @@ $cadet:cadetblue;
   }
   
   .navText{
-    color:$corn;
+    color:black;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -23,18 +23,57 @@ $cadet:cadetblue;
     
   }
   
-  .navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-    color:$corn;
-  }
+
+
+  .navbar-light {
+    .navbar-brand {
+      color: black;
   
-  .navbar-light .navbar-nav .nav-link {
-    color:$corn;
+      &:hover,
+      &:focus {
+        color: yellow;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: black;
+  
+        &:hover,
+        &:focus {
+          color: yellow;
+        }
+  
+        &.disabled {
+          color: yellow;
+        }
+      }
+  
+      .show > .nav-link,
+      .nav-link.active {
+        color: yellow;
+      }
+    }
+  
+    .navbar-toggler {
+      color: $navbar-light-color;
+      border-color: $navbar-light-toggler-border-color;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: escape-svg($navbar-light-toggler-icon-bg);
+    }
+  
+    .navbar-text {
+      color: $navbar-light-color;
+  
+      a,
+      a:hover,
+      a:focus  {
+        color: $navbar-light-active-color;
+      }
+    }
   }
-
-  .navbar-light .navbar-text {
-    color:$corn;
-  }
-
 .ayo  {
   width: 100%;
   border: solid;
@@ -47,3 +86,7 @@ $cadet:cadetblue;
   border-color: crimson;
 }
 
+.motto{
+  align-items:flex-start;
+  text-align: right;
+}
