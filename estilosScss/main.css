@@ -207,7 +207,7 @@ body {
 
 .tablaDía {
   color: indianred;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -236,6 +236,10 @@ body {
 }
 .tabla__saborDía ul {
   list-style: none;
+}
+
+.datos {
+  margin-bottom: 2rem;
 }
 
 .rowImagen {
@@ -388,14 +392,31 @@ body {
   background-color: cadetblue;
 }
 
-.navText {
+.ayo {
+  width: 100%;
+  border: solid;
+  border-color: black;
+}
+
+.aya {
+  width: 100%;
+  border: solid;
+  border-color: crimson;
+}
+
+.motto {
+  align-items: flex-start;
+  text-align: right;
+}
+
+.navText1 {
   color: black;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
 
-.navbar-brand .navText {
+.navbar-brand .navText1 {
   padding-bottom: none;
   padding-top: none;
 }
@@ -414,29 +435,32 @@ body {
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link :hover {
-  color: cornsilk;
-}
-
 .navbar-light .navbar-text {
   color: cornsilk;
 }
 
-.ayo {
-  width: 100%;
-  border: solid;
-  border-color: black;
+.nav-link1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.aya {
-  width: 100%;
-  border: solid;
-  border-color: crimson;
+.nav-link1:hover {
+  transform: scale(1.1);
+  text-transform: scale(1.1);
+  color: cornsilk;
 }
 
-.motto {
-  align-items: flex-start;
-  text-align: right;
+.nav-item a:hover {
+  transform: scale(1.1);
+}
+
+.static {
+  color: cornsilk;
+  scale: 1.5;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 .rowSnacks {

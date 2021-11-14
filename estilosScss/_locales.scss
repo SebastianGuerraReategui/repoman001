@@ -63,7 +63,7 @@ $cyan:darkcyan;
 }
 .tablaDía{
   color: $red;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -90,4 +90,8 @@ $cyan:darkcyan;
     ul{
       list-style:none;
     }
+}
+
+.datos{
+  margin-bottom: 2rem;
 }
