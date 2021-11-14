@@ -12,8 +12,12 @@ $cadet:cadetblue;
     font-size: 1.5rem;
   }
 
+.navbar-brand .navText{
+  padding-bottom: none;
+  padding-top:none;
+}
 .navbar-light .navbar-brand {
-    color: rgba(0,0,0,.9);
+    color: $corn;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     
@@ -42,3 +46,4 @@ $cadet:cadetblue;
   border:solid;
   border-color: crimson;
 }
+
