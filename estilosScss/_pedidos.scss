@@ -21,6 +21,11 @@
         }
 }
 
+.pedidosStart{
+    margin-top:2rem;
+    font-size: 2.5rem;
+    color:indianred;
+}
 /*BOOTSTRAP EDITS*/
 .form-check-input:checked {
     background-color:black;
@@ -43,4 +48,31 @@
     font-size: .875rem;
     border-radius: 0.2rem;
     min-width: 4rem;
+}
+
+.shopBtn{
+    background-color: transparent;
+    border: transparent;
+}
+.btn {
+    border: 0 none;
+    outline: 0 none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.card{
+    background-color: cornsilk;
+    border: 3px solid;
+    border-color: brown;
+}
+
+.pye{
+    padding-bottom: 3rem;
+}
+
+.select{
+    border-radius: 0.25rem;
 }

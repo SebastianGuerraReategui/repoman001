@@ -4,6 +4,11 @@
     padding:none;
 }
 
+.otrosStart{
+    margin-top:2rem;
+    font-size: 2.5rem;
+    color:skyblue;
+}
 .sectionCaja1{
     display: flex;
     justify-content: space-between;
@@ -26,6 +31,7 @@
 .snacksMascotas{
     display: flex;
     justify-content: space-around;
+    border-right: solid brown 3px;
         .snacksMascotas__Caja{
             width: 50%;
                 .snacksMascotas__Caja-Productos{
@@ -39,6 +45,7 @@
                     font-size: 1.8rem;
                     font-weight: 600;
                     margin-bottom: 1rem;
+                    
                     .textos{
                             font-family:'Roboto', sans-serif;
                             color: indianred;
@@ -49,6 +56,34 @@
         }
 }
 
+.snacksMascotas1{
+    display: flex;
+    justify-content: space-around;
+    border-right: solid brown 3px;
+    border-left:solid brown 3px;
+        .snacksMascotas__Caja1{
+            width: 50%;
+                .snacksMascotas__Caja-Productos1{
+                    background-color: #222222;
+                    height: 10rem;
+                    border-radius: 45%;
+                    color:cornsilk;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    
+                    .textos{
+                            font-family:'Roboto', sans-serif;
+                            color: indianred;
+                            font-size: 1rem;
+                        }
+                        
+                }
+        }
+}
 .textos{
     font-family:'Roboto', sans-serif;
     text-align: left;
