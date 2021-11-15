@@ -41,6 +41,13 @@ padding-top:none;
   
 }
 
+.navbar-light .navbar-brand:hover {
+  color: $corn;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
   color:black;
 }
@@ -60,6 +67,7 @@ padding-top:none;
   padding-right: 0.5rem;
 }
 .nav-link1:hover{
+  transition: 0.25s;
   transform: scale(1.1);
   text-transform: scale(1.1);
   color:cornsilk;
@@ -71,8 +79,7 @@ padding-top:none;
 
 .static{
   color: $corn;
-  scale: 1.5;
-  text-decoration-line: none;
+  scale: (1.5);
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
 }

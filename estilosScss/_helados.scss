@@ -4,7 +4,7 @@ $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
     width: 100%;
     margin:auto;
     padding:1rem;
-    margin-top: 3rem;
+
     .heladosSabores2{
         display:flex;
         background-position: center center;
@@ -23,6 +23,13 @@ $gradiente:linear-gradient(rgba(58, 58, 58, 0),rgba(100,100,100,0.7));
         color:cornsilk;
         font-size: large;
       }
+  }
+
+  .heladosStart{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color:burlywood;
   }
 
   .tablaHelado{

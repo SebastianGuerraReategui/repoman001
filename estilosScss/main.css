@@ -103,8 +103,9 @@ body {
   margin-top: 2rem;
   background-color: cadetblue;
   margin-bottom: 2rem;
-  border-radius: 30%;
+  border-radius: 0.5rem;
   text-align: center;
+  border: none;
 }
 .volver1 a {
   text-decoration: none;
@@ -201,6 +202,7 @@ body {
 }
 
 .localesStart {
+  font-family: "Roboto", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
   color: lightseagreen;
@@ -271,10 +273,51 @@ body {
 .rowImagen .rowImagen__menu .boing .boing__Text {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
 }
 .rowImagen .rowImagen__menu .boing .boing__Text a {
   text-decoration: none;
   color: darkcyan;
+}
+
+.smolMenu {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.textMenu1 {
+  text-decoration: none;
+  color: orange;
+}
+
+.textMenu1:hover {
+  color: orange;
+}
+
+.textMenu2 {
+  text-decoration: none;
+  color: chocolate;
+}
+
+.textMenu2:hover {
+  color: chocolate;
+}
+
+.textMenu3 {
+  text-decoration: none;
+  color: indigo;
+}
+
+.textMenu3:hover {
+  color: indigo;
+  transform: scale(1.1);
+}
+
+.textTry:hover {
+  transform: scale(1.1);
 }
 
 .rowOtros {
@@ -284,6 +327,7 @@ body {
 }
 
 .otrosStart {
+  font-family: "Roboto", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
   color: skyblue;
@@ -462,6 +506,12 @@ body {
   font-size: 2rem;
 }
 
+.navbar-light .navbar-brand:hover {
+  color: cornsilk;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
   color: black;
 }
@@ -480,6 +530,7 @@ body {
 }
 
 .nav-link1:hover {
+  transition: 0.25s;
   transform: scale(1.1);
   text-transform: scale(1.1);
   color: cornsilk;
@@ -492,8 +543,6 @@ body {
 .static {
   color: cornsilk;
   scale: 1.5;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
@@ -570,31 +619,8 @@ body {
   padding: 0.5rem;
 }
 
-.pedidoTag {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  color: cadetblue;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-}
-
-.checkers {
-  color: indianred;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
-.forma {
-  margin-top: 1rem;
-  width: 50%;
-}
-.forma .btn {
-  background-color: darksalmon;
-  color: cornsilk;
-}
-
 .pedidosStart {
+  font-family: "Roboto", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
   color: indianred;
@@ -653,6 +679,7 @@ body {
 }
 
 .nosotrosStart {
+  font-family: "Roboto", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
   color: brown;
@@ -719,7 +746,6 @@ body {
   width: 100%;
   margin: auto;
   padding: 1rem;
-  margin-top: 3rem;
 }
 .rowHelados .heladosSabores2 {
   display: flex;
@@ -738,6 +764,13 @@ body {
   align-items: center;
   color: cornsilk;
   font-size: large;
+}
+
+.heladosStart {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: burlywood;
 }
 
 .tablaHelado {
@@ -836,10 +869,26 @@ body {
   width: 40%;
 }
 
+.textoError {
+  margin-top: 1rem;
+}
+
 /*Index Query*/
 @media only screen and (max-width: 768px) {
   .boing {
     margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 478px) {
+  #menuOpciones {
+    display: none;
+  }
+}
+@media only screen and (min-width: 478px) {
+  .smolMenu {
+    display: none;
   }
 }
 /*Nosotros Query*/
@@ -932,8 +981,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .rowHelados {
     width: 100%;
-    padding: 4rem;
-    margin-top: 3rem;
+    padding: 1rem;
   }
   .rowHelados .heladosSabores2 {
     display: flex;
@@ -978,6 +1026,10 @@ body {
 @media only screen and (max-width: 748px) {
   .snacksMascotas {
     border-left: solid brown 3px;
+  }
+
+  .textos {
+    font-size: 1.25rem;
   }
 }
 /*Pedidos Query*/

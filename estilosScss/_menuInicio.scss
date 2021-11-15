@@ -23,6 +23,7 @@
                     .boing__Text{
                         text-align: center;
                         font-family:'Roboto', sans-serif;
+                        font-size: 1.25rem;
                             a{
                                 text-decoration:none;
                                 color:darkcyan;
@@ -32,4 +33,44 @@
         }
 
   }
+
+.smolMenu{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 3rem;
+    padding:0.75rem;
+    text-decoration: none;
+}
+
+.textMenu1{
+    text-decoration: none;
+    color:orange;
+}
+
+.textMenu1:hover{
+    color:orange;
+}
+
+.textMenu2{
+    text-decoration: none;
+    color:chocolate;
+}
+
+.textMenu2:hover{
+    color:chocolate;
+}
+
+.textMenu3{
+    text-decoration: none;
+    color:indigo;
+}
+
+.textMenu3:hover{
+    color:indigo;
+    transform: scale(1.1);
+}
+
+.textTry:hover{
+    transform: scale(1.1);
+}
 
