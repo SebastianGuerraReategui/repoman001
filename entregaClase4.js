@@ -190,3 +190,21 @@ function ByFunction1() {
 
   let precioProductos1 = (snacks.length*35)
   console.log(precioProductos1)
+
+  /*Boton DOM*/
+
+  function cambio1() {
+    let cambiar = document.getElementsByClassName("pedidosStart");
+    cambiar[0].style = "color:green"
+    cambiar[0].innerText = "Nuevo Pedido!"
+  }
+
+  function cambio2() {
+    let cambiar2 = document.getElementById("demo")
+    cambiar2.style.cssText = "color:brown ; font-size:2rem"
+  }
+
+  function cambio3() {
+    let cambiar3 = document.getElementById("demon")
+    cambiar3.style.cssText = "color:brown ; font-size:2rem"
+  }
