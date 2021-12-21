@@ -208,3 +208,26 @@ function ByFunction1() {
     let cambiar3 = document.getElementById("demon")
     cambiar3.style.cssText = "color:brown ; font-size:2rem"
   }
+
+  /*Cambios al dom a través de un evento con fórmula*/
+
+
+const nerv = []
+function calcVal() {
+    nerv.push("Su nuevo total es de " + textInputElement.value*35 + " soles");
+    document.getElementById("demure").innerHTML = nerv;
+}
+
+let textInputElement = document.getElementById('textInput');
+textInputElement.addEventListener('keyup', function(){
+    
+  let valorH = textInputElement.value;
+  while(isNaN(valorH)){
+    valorH = prompt("Ingrese una cantidad")
+    }while(valorH>30){
+        valorH = prompt("No hacemos ventas mayores a 30 litros")
+        }        
+  console.log('Su nuevo total es de "' + valorH*35 + ' soles"');
+  
+}
+);
