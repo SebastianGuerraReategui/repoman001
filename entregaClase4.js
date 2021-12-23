@@ -1,78 +1,3 @@
-let precioBruto = prompt("Cuál es el monto a pagar?")
-
-
-function precioBase(primerTotal){
-let precioBrutoCalc;
-while(isNaN(primerTotal)){
-    primerTotal = prompt("Debe ingresar un precio");
-    }
-if(primerTotal){
-    pago = true
-}else{    
-    pago =false}
-if(pago){
-    cuotas = prompt("¿Desea pagar en cuotas?")   
-}while(cuotas != "Sí" && cuotas != "No"){
-    cuotas = prompt("ingrese una opción válida")}
-if(cuotas == "Sí"){
-    operacion = true
-    if(operacion){
-        cuotasOperacion = prompt("¿Cuántas cuotas? (Máximo 24)")
-        }while(isNaN(cuotasOperacion)){
-            cuotasOperacion = prompt("Ingrese una cuota válida (Máximo 24)")
-            }
-            while(cuotasOperacion>24){
-                cuotasOperacion = prompt("Ingrese una cuota válida (Máximo 24)")
-                }
-        if(cuotasOperacion <=24){
-            finalCuotas = true
-        }else{
-            finalCuotas = false
-        }
-        if(finalCuotas)
-            document.write(Text= "Tu cuenta será de " + cuotasOperacion + " cuotas de " + primerTotal/cuotasOperacion + " soles cada una ");
-}else{
-    document.write("Tu cuenta es de " + primerTotal)
-    operacion = false
-}
-
-return precioBrutoCalc;
-}
-
-let precioBruto2 = precioBase(precioBruto)
-
-/*Objeto cliente*/
-
-
-class Cliente{
-    constructor(nom, dni, tarjeta) {
-        (this.nom = nom),
-        (this.dni = dni),
-        (this.tarjeta = tarjeta)
-    }
-
-
-}
-let nomP = prompt("Inserte su nombre:")
-let dniP = prompt("Inserte su DNI");
-while(isNaN(dniP)){
-    dniP = prompt("Ingrese un DNI válido")
-    }
-    while(dniP>99999999){
-        dniP = prompt("Ingrese un DNI válido")
-        } 
-let tarjeta = prompt("Inserte el número de su tarjeta")
-while(isNaN(tarjeta)){
-    dniP = prompt("Ingrese una tarjeta de crédito válida")
-    }
-
-const usuario = new Cliente(nomP, dniP, tarjeta)
-
-console.log (usuario);
-
-for (let atributos in usuario){
-    console.log(usuario[atributos]);
-}
 
 /*Array de Helados*/
 
@@ -210,7 +135,19 @@ function ByFunction1() {
   }
 
   /*Cambios al dom a través de un evento con fórmula*/
-
+  let textInputElement = document.getElementById('textInput');
+  textInputElement.addEventListener('keyup', function(){
+      
+    let valorH = textInputElement.value;
+    while(isNaN(valorH)){
+      valorH = prompt("Ingrese una cantidad")
+      }while(valorH>30){
+          valorH = prompt("No hacemos ventas mayores a 30 litros")
+          }        
+    console.log('Su nuevo total es de "' + valorH*35 + ' soles"');
+    
+  }
+  );
 
 const nerv = []
 function calcVal() {
@@ -218,16 +155,43 @@ function calcVal() {
     document.getElementById("demure").innerHTML = nerv;
 }
 
-let textInputElement = document.getElementById('textInput');
-textInputElement.addEventListener('keyup', function(){
-    
-  let valorH = textInputElement.value;
-  while(isNaN(valorH)){
-    valorH = prompt("Ingrese una cantidad")
-    }while(valorH>30){
-        valorH = prompt("No hacemos ventas mayores a 30 litros")
-        }        
-  console.log('Su nuevo total es de "' + valorH*35 + ' soles"');
-  
+/*Integrando JSON con storage*/
+function store(){ 
+  let brand = document.getElementById('carBrand').value;
+  let price = document.getElementById('carPrice').value;
+  let key = document.getElementById('key').value;
+  const car = {
+      "Helado": brand,
+      "Litros": price,
+  }
+
+  window.localStorage.setItem(key,JSON.stringify(car));  
+ 
 }
-);
+
+function retrieveRecords(){
+  let key = document.getElementById('retrieveKey').value; 
+  console.log("retrive records");
+  let records = window.localStorage.getItem(key); 
+  let paragraph = document.createElement("p");
+  let infor = document.createTextNode(records);
+  paragraph.appendChild(infor);
+  let element = document.getElementById("retrieve");
+  element.appendChild(paragraph);
+}
+function removal(){
+  var elem = document.getElementById("retrieve");
+  elem.parentNode.removeChild(elem)();
+  }
+
+function clearStorage(){
+  localStorage.clear()
+  console.log("clear records");
+}
+
+window.onload =function(){
+  document.getElementById("Form").onsubmit = store
+  document.getElementById("clearButton").onclick = clearStorage
+ 
+  document.getElementById("retrieveButton").onclick = retrieveRecords
+}
