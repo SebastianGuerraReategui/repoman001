@@ -195,3 +195,13 @@ window.onload =function(){
  
   document.getElementById("retrieveButton").onclick = retrieveRecords
 }
+
+/*Es un jquery*/
+
+$(document).ready(function(){
+  $("img").mouseenter(function(){
+    alert("You entered p1!");
+  },
+  
+  ); 
+});
