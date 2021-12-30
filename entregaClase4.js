@@ -200,8 +200,20 @@ window.onload =function(){
 
 $(document).ready(function(){
   $("img").mouseenter(function(){
-    alert("You entered p1!");
+    alert("Llévame a casa!");
   },
   
   ); 
+});
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("ol").append("<li class=\"heladitosYa\">Vainilla</li>");
+  });
+});
+
+$(document).ready(function(){
+  $("#botons").click(function(){
+    $("li").remove(".heladitosYa");
+  });
 });
