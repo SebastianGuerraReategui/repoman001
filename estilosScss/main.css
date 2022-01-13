@@ -977,6 +977,47 @@ body {
     list-style: none;
   }
 }
+
+#carro {
+  height:40px;
+  width:40px;
+  cursor: pointer;
+}
+
+/* cart items */
+.cart-items {
+  max-height: calc(100vh - 247px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* item info */
+.cart-item .item-info {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  border-radius: 0 10px 10px 0;
+
+  padding: 10px;
+}
+.cart-item .item-info:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+  cursor: pointer;
+}
+.cart-item .item-info img {
+  width: 75px;
+}
+
 /*Helados Query*/
 @media only screen and (min-width: 1200px) {
   .rowHelados {
