@@ -145,41 +145,64 @@ const products = [
       },
   ];
   
-  const products1 = [
-    {
-      id: 0,
-      name: "Brownie",
-      price: 8,
-      instock: 100,
-      description:
-        "Unidad",
-      imgSrc: "../images/receitas-brownie-scaled.jpg",
-    },
-    {
-        id: 1,
-        name: "Galleta",
-        price: 8,
-        instock: 100,
-        description:
-          "Unidad",
-        imgSrc: "../images/national-cookie-day.jpg",
-      },
-      {
-        id: 2,
-        name: "Muffin",
-        price: 8,
-        instock: 100,
-        description:
-          "Unidad",
-        imgSrc: "../images/muffin.jpg",
-      },
-      {
-        id: 3,
-        name: "Alfajor",
-        price: 8,
-        instock: 100,
-        description:
-          "Unidad",
-        imgSrc: "../images/alfajor.jpg",
-      },
+
+
+const products1 = [
+  {
+    id: 16,
+    name: "Brownie",
+    price: 8,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/receitas-brownie-scaled.jpg",
+  },
+  {
+    id: 17,
+    name: "Alfajor",
+    price: 8,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/alfajor.jpg",
+  },
+  {
+    id: 18,
+    name: "Muffin",
+    price: 8,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/muffin.jpg",
+  },
+  {
+    id: 19,
+    name: "Galleta",
+    price: 8,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/national-cookie-day.jpg",
+  },
+];
+
+const products2 = [
+  {
+    id: 20,
+    name: "Snack para perro",
+    price: 15,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/dogSnack.jpg",
+  },
+  {
+    id: 21,
+    name: "Snack para gato",
+    price: 15,
+    instock: 100,
+    description:
+      "Unidad",
+    imgSrc: "../images/catSnack.jpg",
+  },
 ]

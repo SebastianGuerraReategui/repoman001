@@ -1004,14 +1004,14 @@ body {
 /* item info */
 .cart-item .item-info {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: none;
 
   border-radius: 0 10px 10px 0;
 
   padding: 10px;
 }
 .cart-item .item-info:hover {
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(192, 126, 72, 0.6);
   cursor: pointer;
 }
 .cart-item .item-info img {
