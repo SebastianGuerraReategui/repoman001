@@ -978,6 +978,18 @@ body {
   }
 }
 
+.verMas{
+  cursor:pointer;
+  font-size: 1.25rem;
+  color:darkcyan;
+  font-family: 'Roboto', sans-serif;
+
+}
+#ans{
+  font-size: 1.25rem;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+}
 #carro {
   height:40px;
   width:40px;

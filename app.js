@@ -1,4 +1,5 @@
 // SELECTORES
+
 const productsEl2 = document.querySelector(".products2");
 const productsEl1 = document.querySelector(".products1");
 const productsEl = document.querySelector(".products");
@@ -7,7 +8,7 @@ const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
 
-// LOS PRODUCTOS - HELADOS
+// LOS PRODUCTOS
 function renderProdcuts2() {
   products2.forEach((product2) => {
     productsEl2.innerHTML += `
@@ -27,9 +28,7 @@ function renderProdcuts2() {
           <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
               <h6 class="mb-0">S/.${product2.price}</h6>
           </div>
-          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-          </div>
+
       </div>
         `;
   });
@@ -55,9 +54,7 @@ function renderProdcuts1() {
           <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
               <h6 class="mb-0">S/.${product1.price}</h6>
           </div>
-          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-          </div>
+
       </div>
         `;
   });
@@ -83,9 +80,7 @@ function renderProdcuts() {
             <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                 <h6 class="mb-0">S/.${product.price}</h6>
             </div>
-            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-            </div>
+
         </div>
           `;
     });
@@ -130,14 +125,18 @@ function updateCart() {
 function renderSubtotal() {
     let totalPrice = 0,
       totalItems = 0;
+      
   
     cart.forEach((item) => {
       totalPrice += item.price * item.numberOfUnits;
       totalItems += item.numberOfUnits;
+      
+      
     });
-  
+
     subtotalEl.innerHTML = `Subtotal (${totalItems} productos): S/.${totalPrice.toFixed(2)}`;
-    totalItemsInCartEl.innerHTML = totalItems;
+    totalItemsInCartEl.innerHTML = "S/." + (totalPrice + 10) ;
+    
   }
 
 
@@ -192,3 +191,50 @@ function renderCartItems() {
     updateCart();
   }
 
+  function showDiv() {
+    document.getElementById('hello').style.display = "block";
+  }
+
+  function showValue() {
+    let name = document.getElementById('name').value;
+    let chuck = name
+    if (chuck == null ||
+      chuck == undefined ||
+      chuck == 0) {
+     
+      alert("Ingrese su nombre");
+      return false;
+  } else(chuck=true)
+      
+  
+    let tarjet = document.getElementById('tarjeta').value;
+    let check = tarjet
+    if(isNaN(check)){
+      tarjet = alert("Ingrese un número de tarjeta válido")
+      return false;
+    }if(check<1000000000000000){
+      tarjet = alert("Ingrese un número de tarjeta válido")
+      return false;
+    }
+    else(check = true)
+    let dirección = document.getElementById('dirección').value;
+    let chimk = dirección
+    if (chimk == null ||
+      chimk == undefined ||
+      chimk == 0) {
+     
+      alert("Ingrese una dirección");
+      return false;
+  } else(chimk=true)
+
+    document.getElementById('ans').innerHTML = `<div class="mensaje-final">Gracias ${name} por su compra! Durante las próximas 48 horas recibirá su pedido en ${dirección}.</div>`;;
+    document.getElementById('hello').style.display = "none";
+  }
+
+  $(document).ready(function(){
+    $(".pagar").mouseenter(function(){
+      alert("No olvides revisar tu pedido! No hay re-embolsos una vez realizado");
+    },
+    
+    ); 
+  });
